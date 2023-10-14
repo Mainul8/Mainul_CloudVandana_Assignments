@@ -16,11 +16,10 @@ public class Pangram {
     }
 
     public static boolean isPangram(String input) {
-        // Define an array to count the occurrence of each alphabet (A to Z)
+
         boolean[] alphabetCount = new boolean[26];
         int totalAlphabets = 26;
 
-        // Convert the input to lowercase to ensure case-insensitivity
         input = input.toLowerCase();
 
         for (int i = 0; i < input.length(); i++) {
@@ -33,7 +32,6 @@ public class Pangram {
                 }
             }
 
-            // If all alphabets are found, no need to continue checking
             if (totalAlphabets == 0) {
                 return true;
             }
