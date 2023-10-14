@@ -1,12 +1,10 @@
-package com.mainul;
-
 import java.util.Scanner;
 
-public class Pangram {
+public class PangramProgram {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter a sentence: ");
-        String input = scanner.nextLine();
+        String input = sc.nextLine();
 
         if (isPangram(input)) {
             System.out.println("The input is a pangram.");
@@ -41,4 +39,5 @@ public class Pangram {
 
         return false;
     }
+    
 }
