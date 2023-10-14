@@ -1,0 +1,88 @@
+/* Resetting default margins and paddings */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Applying styles to the container */
+.container {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #78ddd8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#title {
+  font-size: 24px;
+}
+
+/* Form group styles */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Label styles */
+label {
+  display: flex;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Input styles */
+.formControl {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+/* Popup styles */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 60px;
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center; 
+}
+
+  .popup-content .close {
+    color: #aaa;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .popup-content .close:hover {
+    color: #000;
+  }
